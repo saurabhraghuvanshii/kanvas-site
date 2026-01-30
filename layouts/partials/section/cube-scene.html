@@ -1,0 +1,18 @@
+<section id="cube-scene" class="relative w-full h-[520px] overflow-hidden bg-[#0a0a0a]">
+  <canvas class="absolute inset-0 w-full h-full"></canvas>
+
+  <!-- Overlay gradient (radial fade) -->
+  <div class="pointer-events-none absolute inset-0 
+              bg-[radial-gradient(ellipse_at_center,transparent_0%,transparent_50%,rgba(0,0,0,0.5)_100%)]">
+  </div>
+
+  <!-- Scanlines effect -->
+  <div class="pointer-events-none absolute inset-0 opacity-[0.03]
+              bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(255,255,255,0.03)_2px,rgba(255,255,255,0.03)_4px)]">
+  </div>
+</section>
+
+<script type="module">
+  import initCubeScene from "/js/cube-scene.js";
+  initCubeScene("cube-scene");
+</script>
